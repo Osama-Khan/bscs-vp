@@ -19,16 +19,14 @@ namespace ConsoleTasks.Assignments.A1
     {
         public Driver()
         {
-            Employee e = new Employee(),
-                e2 = new Employee();
-            e.setId(0); e.setName("Ali"); e.setSalary(4000);
-            e2.setId(1); e2.setName("Junaid"); e2.setSalary(7500);
+            Employee e = new Employee("Ali", 0, 4000),
+                e2 = new Employee("Junaid", 1, 7500);
 
-            float annualSalary1 = (e.getSalary() * 12) - e.getSalary() * 12 * 0.04f;
-            float annualSalary2 = (e2.getSalary() * 12) - e2.getSalary() * 12 * 0.04f;
+            e.setData();
+            e.getData();
 
-            Console.WriteLine(e.getName() + "'s Salary: " + annualSalary1);
-            Console.WriteLine(e2.getName() + "'s Salary: " + annualSalary2);
+            e.getAnnualSalary();
+            e2.getAnnualSalary();
             Console.ReadKey();
         }
     }

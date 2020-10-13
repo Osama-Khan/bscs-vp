@@ -8,11 +8,14 @@ namespace ConsoleTasks.Assignments.A1
         int id;
         int salary;
 
-        public Employee()
+        public Employee(string name, int id, int salary)
         {
-            name = "";
-            id = -1;
-            salary = -1;
+            this.name = name;
+            this.id = id;
+            if (salary >= 0)
+                this.salary = salary;
+            else
+                this.salary = -1;
         }
 
         ~Employee()
@@ -20,35 +23,30 @@ namespace ConsoleTasks.Assignments.A1
             Console.WriteLine(string.Format("Employee object with id {0} destroyed", id));
         }
 
-        public string getName()
+        public void setData()
         {
-            return name;
+            Console.Write("Enter Name: ");
+            this.name = Console.ReadLine();
+            Console.Write("Enter ID: ");
+            this.id = int.Parse(Console.ReadLine());
+            Console.Write("Enter Salary: ");
+            var s = int.Parse(Console.ReadLine());
+            if (s >= 0) salary = s;
+            else salary = -1;
         }
 
-        public void setName(string name)
+        public void getData()
         {
-            this.name = name;
+            Console.WriteLine("Data for Employee:");
+            Console.WriteLine("ID: " + id);
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Salary: " + salary);
         }
 
-        public int getId()
+        public void getAnnualSalary()
         {
-            return id;
-        }
-
-        public void setId(int id)
-        {
-            this.id = id;
-        }
-
-        public int getSalary()
-        {
-            return salary;
-        }
-
-        public void setSalary(int salary)
-        {
-            if (salary < 0) this.salary = -1;
-            else this.salary = salary;
+            var s = salary * 12 - (salary * 12 * 0.04f);
+            Console.WriteLine(name + "'s Annual Salary: " + s);
         }
     }
 }
