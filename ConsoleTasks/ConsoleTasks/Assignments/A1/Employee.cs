@@ -12,10 +12,7 @@ namespace ConsoleTasks.Assignments.A1
         {
             this.name = name;
             this.id = id;
-            if (salary >= 0)
-                this.salary = salary;
-            else
-                this.salary = -1;
+            this.salary = salary >= 0 ? salary : -1;
         }
 
         ~Employee()
@@ -31,8 +28,7 @@ namespace ConsoleTasks.Assignments.A1
             this.id = int.Parse(Console.ReadLine());
             Console.Write("Enter Salary: ");
             var s = int.Parse(Console.ReadLine());
-            if (s >= 0) salary = s;
-            else salary = -1;
+            salary = s >= 0 ? s : -1;
         }
 
         public void getData()
