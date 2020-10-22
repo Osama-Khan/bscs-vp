@@ -10,7 +10,7 @@ namespace ConsoleTasks
     {
         static void Main(string[] args)
         {
-            new Assignments.A1.Driver();
+            new Assignments.A2.Driver();
         }
     }
 }

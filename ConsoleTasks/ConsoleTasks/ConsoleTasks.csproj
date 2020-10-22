@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Assignments\A1\Driver.cs" />
     <Compile Include="Assignments\A1\Employee.cs" />
+    <Compile Include="Assignments\A2\Driver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
