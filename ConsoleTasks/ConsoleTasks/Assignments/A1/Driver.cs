@@ -8,7 +8,6 @@
  * not positive, set it to -1. Write a test program that demonstrates class Employee’s 
  * functionalities. Create two Employee objects and display each object’s yearly salary after 
  * deducting 4% tax.
- * 
  */
 
 using System;
