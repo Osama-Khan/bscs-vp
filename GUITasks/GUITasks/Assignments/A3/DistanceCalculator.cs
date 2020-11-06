@@ -20,11 +20,11 @@ namespace GUITasks
 
         public void Calculate(object s, EventArgs e)
         {
-            int d, t;
+            float d, t;
             try
             {
-                d = int.Parse(txt_dist.Text);
-                t = int.Parse(txt_time.Text);
+                d = float.Parse(txt_dist.Text);
+                t = float.Parse(txt_time.Text);
             } catch (FormatException _)
             {
                 // Invalid input
