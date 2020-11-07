@@ -12,7 +12,7 @@ namespace GUITasks.Assignments.A4
         public TemperatureConverter()
         {
             InitializeComponent();
-            btn_convert.Click += (e, s) => { Convert(); };
+            btn_convert.Click += (e, s) => Convert();
         }
 
         public void Convert()
