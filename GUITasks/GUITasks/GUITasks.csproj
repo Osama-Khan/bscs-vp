@@ -70,6 +70,12 @@
     <Compile Include="Assignments\A4\TemperatureConverter.Designer.cs">
       <DependentUpon>TemperatureConverter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Assignments\A5\ColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assignments\A5\ColorDialog.Designer.cs">
+      <DependentUpon>ColorDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Assignments\A3\AreaCalculator.resx">
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Assignments\A4\TemperatureConverter.resx">
       <DependentUpon>TemperatureConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assignments\A5\ColorDialog.resx">
+      <DependentUpon>ColorDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
