@@ -61,6 +61,7 @@
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_main)).BeginInit();
             this.SuspendLayout();
@@ -243,7 +244,8 @@
             this.country,
             this.phone,
             this.email,
-            this.age});
+            this.age,
+            this.imageLocation});
             this.dgv.Location = new System.Drawing.Point(50, 268);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
@@ -334,6 +336,12 @@
             this.age.Name = "age";
             this.age.ReadOnly = true;
             // 
+            // imageLocation
+            // 
+            this.imageLocation.HeaderText = "Image Location";
+            this.imageLocation.Name = "imageLocation";
+            this.imageLocation.ReadOnly = true;
+            // 
             // ClientInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,5 +414,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn age;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imageLocation;
     }
 }

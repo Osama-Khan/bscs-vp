@@ -25,11 +25,11 @@ namespace Mid
             var res = dialog_picture.ShowDialog();
             if (res == DialogResult.OK)
             {
-                pic_main.Image = Image.FromFile(dialog_picture.FileName);
+                pic_main.ImageLocation = dialog_picture.FileName;
             }
         }
 
-        void SaveData(object sender, System.EventArgs args)
+        void SaveData(object sender, EventArgs args)
         {
             string name = txt_name.Text,
                 address = txt_address.Text,
@@ -38,7 +38,8 @@ namespace Mid
                 zip = txt_zip.Text,
                 country = txt_country.Text,
                 phone = txt_phone.Text,
-                email = txt_email.Text;
+                email = txt_email.Text,
+                imagePath = pic_main.ImageLocation;
             DateTime dob = date_dob.Value;
             DateTime cur = DateTime.Now;
             int age = cur.Year - dob.Year;
@@ -52,7 +53,7 @@ namespace Mid
             }
             string[] row = new string[]
             {
-                name, address, city, state, zip, country, phone, email, age.ToString()
+                name, address, city, state, zip, country, phone, email, age.ToString(), imagePath
             };
             dgv.Rows.Add(row);
         }
