@@ -48,6 +48,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.date_dob = new System.Windows.Forms.DateTimePicker();
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.pic_main = new System.Windows.Forms.PictureBox();
+            this.btn_choose_image = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.dialog_picture = new System.Windows.Forms.OpenFileDialog();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,12 +60,7 @@
             this.country = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pic_main = new System.Windows.Forms.PictureBox();
-            this.btn_choose_image = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.dialog_picture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_main)).BeginInit();
             this.SuspendLayout();
@@ -244,13 +243,42 @@
             this.country,
             this.phone,
             this.email,
-            this.dob,
             this.age});
             this.dgv.Location = new System.Drawing.Point(50, 268);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.Size = new System.Drawing.Size(547, 150);
             this.dgv.TabIndex = 19;
+            // 
+            // pic_main
+            // 
+            this.pic_main.Location = new System.Drawing.Point(603, 74);
+            this.pic_main.Name = "pic_main";
+            this.pic_main.Size = new System.Drawing.Size(185, 145);
+            this.pic_main.TabIndex = 20;
+            this.pic_main.TabStop = false;
+            // 
+            // btn_choose_image
+            // 
+            this.btn_choose_image.Location = new System.Drawing.Point(603, 230);
+            this.btn_choose_image.Name = "btn_choose_image";
+            this.btn_choose_image.Size = new System.Drawing.Size(185, 39);
+            this.btn_choose_image.TabIndex = 21;
+            this.btn_choose_image.Text = "Choose Image";
+            this.btn_choose_image.UseVisualStyleBackColor = true;
+            // 
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(603, 275);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(185, 68);
+            this.btn_save.TabIndex = 22;
+            this.btn_save.Text = "Save Data";
+            this.btn_save.UseVisualStyleBackColor = true;
+            // 
+            // dialog_picture
+            // 
+            this.dialog_picture.FileName = "picture";
             // 
             // name
             // 
@@ -300,47 +328,11 @@
             this.email.Name = "email";
             this.email.ReadOnly = true;
             // 
-            // dob
-            // 
-            this.dob.HeaderText = "DOB";
-            this.dob.Name = "dob";
-            this.dob.ReadOnly = true;
-            // 
             // age
             // 
             this.age.HeaderText = "Age";
             this.age.Name = "age";
             this.age.ReadOnly = true;
-            // 
-            // pic_main
-            // 
-            this.pic_main.Location = new System.Drawing.Point(603, 74);
-            this.pic_main.Name = "pic_main";
-            this.pic_main.Size = new System.Drawing.Size(185, 145);
-            this.pic_main.TabIndex = 20;
-            this.pic_main.TabStop = false;
-            // 
-            // btn_choose_image
-            // 
-            this.btn_choose_image.Location = new System.Drawing.Point(603, 230);
-            this.btn_choose_image.Name = "btn_choose_image";
-            this.btn_choose_image.Size = new System.Drawing.Size(185, 39);
-            this.btn_choose_image.TabIndex = 21;
-            this.btn_choose_image.Text = "Choose Image";
-            this.btn_choose_image.UseVisualStyleBackColor = true;
-            // 
-            // btn_save
-            // 
-            this.btn_save.Location = new System.Drawing.Point(603, 275);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(185, 68);
-            this.btn_save.TabIndex = 22;
-            this.btn_save.Text = "Save Data";
-            this.btn_save.UseVisualStyleBackColor = true;
-            // 
-            // dialog_picture
-            // 
-            this.dialog_picture.FileName = "picture";
             // 
             // ClientInformation
             // 
@@ -404,6 +396,7 @@
         private System.Windows.Forms.PictureBox pic_main;
         private System.Windows.Forms.Button btn_choose_image;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.OpenFileDialog dialog_picture;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
         private System.Windows.Forms.DataGridViewTextBoxColumn city;
@@ -412,8 +405,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn country;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dob;
         private System.Windows.Forms.DataGridViewTextBoxColumn age;
-        private System.Windows.Forms.OpenFileDialog dialog_picture;
     }
 }

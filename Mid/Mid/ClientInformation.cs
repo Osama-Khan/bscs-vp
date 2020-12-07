@@ -52,7 +52,7 @@ namespace Mid
             }
             string[] row = new string[]
             {
-                name, address, city, state, zip, country, phone, email, dob.ToShortTimeString(), age.ToString()
+                name, address, city, state, zip, country, phone, email, age.ToString()
             };
             dgv.Rows.Add(row);
         }
