@@ -48,10 +48,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.date_dob = new System.Windows.Forms.DateTimePicker();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.pic_main = new System.Windows.Forms.PictureBox();
-            this.btn_choose_image = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.dialog_picture = new System.Windows.Forms.OpenFileDialog();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +58,10 @@
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pic_main = new System.Windows.Forms.PictureBox();
+            this.btn_choose_image = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.dialog_picture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_main)).BeginInit();
             this.SuspendLayout();
@@ -251,36 +251,7 @@
             this.dgv.ReadOnly = true;
             this.dgv.Size = new System.Drawing.Size(547, 150);
             this.dgv.TabIndex = 19;
-            // 
-            // pic_main
-            // 
-            this.pic_main.Location = new System.Drawing.Point(603, 74);
-            this.pic_main.Name = "pic_main";
-            this.pic_main.Size = new System.Drawing.Size(185, 145);
-            this.pic_main.TabIndex = 20;
-            this.pic_main.TabStop = false;
-            // 
-            // btn_choose_image
-            // 
-            this.btn_choose_image.Location = new System.Drawing.Point(603, 230);
-            this.btn_choose_image.Name = "btn_choose_image";
-            this.btn_choose_image.Size = new System.Drawing.Size(185, 39);
-            this.btn_choose_image.TabIndex = 21;
-            this.btn_choose_image.Text = "Choose Image";
-            this.btn_choose_image.UseVisualStyleBackColor = true;
-            // 
-            // btn_save
-            // 
-            this.btn_save.Location = new System.Drawing.Point(603, 275);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(185, 68);
-            this.btn_save.TabIndex = 22;
-            this.btn_save.Text = "Save Data";
-            this.btn_save.UseVisualStyleBackColor = true;
-            // 
-            // dialog_picture
-            // 
-            this.dialog_picture.FileName = "picture";
+            this.dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnDgvDoubleClick);
             // 
             // name
             // 
@@ -341,6 +312,36 @@
             this.imageLocation.HeaderText = "Image Location";
             this.imageLocation.Name = "imageLocation";
             this.imageLocation.ReadOnly = true;
+            // 
+            // pic_main
+            // 
+            this.pic_main.Location = new System.Drawing.Point(603, 74);
+            this.pic_main.Name = "pic_main";
+            this.pic_main.Size = new System.Drawing.Size(185, 145);
+            this.pic_main.TabIndex = 20;
+            this.pic_main.TabStop = false;
+            // 
+            // btn_choose_image
+            // 
+            this.btn_choose_image.Location = new System.Drawing.Point(603, 230);
+            this.btn_choose_image.Name = "btn_choose_image";
+            this.btn_choose_image.Size = new System.Drawing.Size(185, 39);
+            this.btn_choose_image.TabIndex = 21;
+            this.btn_choose_image.Text = "Choose Image";
+            this.btn_choose_image.UseVisualStyleBackColor = true;
+            // 
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(603, 275);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(185, 68);
+            this.btn_save.TabIndex = 22;
+            this.btn_save.Text = "Save Data";
+            this.btn_save.UseVisualStyleBackColor = true;
+            // 
+            // dialog_picture
+            // 
+            this.dialog_picture.FileName = "picture";
             // 
             // ClientInformation
             // 

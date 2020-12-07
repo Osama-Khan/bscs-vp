@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 /* Question Number 1: GUI of client information form has been given below. 
@@ -56,6 +55,28 @@ namespace Mid
                 name, address, city, state, zip, country, phone, email, age.ToString(), imagePath
             };
             dgv.Rows.Add(row);
+        }
+
+        /* Question 4: Update the given form of Question 1 in a way that when user 
+         * Double Clicks on any cell of DataGridView, the entire data (row data) of 
+         * the selected cell must be populated in the above editable fields in the 
+         * same sequence. Note you are required to write code for click event only.
+         */
+
+        void OnDgvDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var cells = dgv.Rows[e.RowIndex].Cells;
+            txt_name.Text = cells[0].Value.ToString();
+            txt_address.Text = cells[1].Value.ToString();
+            txt_city.Text = cells[2].Value.ToString();
+            txt_state.Text = cells[3].Value.ToString();
+            txt_zip.Text = cells[4].Value.ToString();
+            txt_country.Text = cells[5].Value.ToString();
+            txt_phone.Text = cells[6].Value.ToString();
+            txt_email.Text = cells[7].Value.ToString();
+            int age = int.Parse(cells[8].Value.ToString());
+            date_dob.Value = new DateTime(2020 - age, 1, 1);
+            pic_main.ImageLocation = cells[9].Value.ToString();
         }
     }
 }
