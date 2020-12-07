@@ -54,7 +54,7 @@ namespace Mid
 
         void OnCalculate(object sender, System.EventArgs args)
         {
-            float basicBill = 0, totalAmount = 0;
+            float basicBill = 0;
             int totalQty = 0;
             for (int i = 0; i < amts.Length; i++)
             {
