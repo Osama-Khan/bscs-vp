@@ -19,7 +19,7 @@ namespace Mid
             btn_save.Click += SaveData;
         }
 
-        void SetPicture(object sender, System.EventArgs args)
+        void SetPicture(object sender, EventArgs args)
         {
             var res = dialog_picture.ShowDialog();
             if (res == DialogResult.OK)

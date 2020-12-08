@@ -16,7 +16,7 @@ namespace Mid
             btn_calculate.Click += OnCalculate;
         }
 
-        void OnCalculate(object sender, System.EventArgs args)
+        void OnCalculate(object sender, EventArgs args)
         {
             var dob = date_dob.Value;
             var cur = DateTime.Now;
