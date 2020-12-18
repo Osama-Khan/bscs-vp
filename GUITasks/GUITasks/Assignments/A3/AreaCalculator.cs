@@ -27,7 +27,7 @@ namespace GUITasks.Assignments.A3
                 w = int.Parse(txt_w.Text);
                 h = int.Parse(txt_h.Text);
             }
-            catch (FormatException _)
+            catch (FormatException)
             {
                 // Invalid input
                 return;
