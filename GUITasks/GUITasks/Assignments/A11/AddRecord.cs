@@ -23,17 +23,15 @@ namespace GUITasks.Assignments.A11
         void onAdd()
         {
             int id, qty; float price;
-
-            try
+            bool valid = int.TryParse(txtNumber.Text, out id);
+            valid = int.TryParse(txtQty.Text, out qty) && valid;
+            valid = float.TryParse(txtPrice.Text, out price) && valid;
+            if (!valid)
             {
-                id = int.Parse(txtNumber.Text);
-                qty = int.Parse(txtQty.Text);
-                price = float.Parse(txtPrice.Text);
-            }
-            catch (Exception)
-            {
+                MessageBox.Show("Invalid values!");
                 return;
             }
+
             SqlConnection con = new SqlConnection(strCon);
             con.Open();
             var q = string.Format("insert into products values ({0}, {1}, {2})", id, qty, price);
