@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assignments\A10\FileSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assignments\A10\FileSearch.Designer.cs">
+      <DependentUpon>FileSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assignments\A10\StudentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assignments\A10\StudentData.Designer.cs">
+      <DependentUpon>StudentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assignments\A11\AddRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assignments\A11\AddRecord.Designer.cs">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assignments\A11\PointOfSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assignments\A11\PointOfSale.Designer.cs">
+      <DependentUpon>PointOfSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assignments\A11\ViewRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assignments\A11\ViewRecords.Designer.cs">
+      <DependentUpon>ViewRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="Assignments\A3\AreaCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +154,33 @@
     <Compile Include="Tasks\WK11.Designer.cs">
       <DependentUpon>WK11.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tasks\WK12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasks\WK12.Designer.cs">
+      <DependentUpon>WK12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\WK13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasks\WK13.Designer.cs">
+      <DependentUpon>WK13.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Assignments\A10\FileSearch.resx">
+      <DependentUpon>FileSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assignments\A10\StudentData.resx">
+      <DependentUpon>StudentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assignments\A11\AddRecord.resx">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assignments\A11\PointOfSale.resx">
+      <DependentUpon>PointOfSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assignments\A11\ViewRecords.resx">
+      <DependentUpon>ViewRecords.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Assignments\A3\AreaCalculator.resx">
       <DependentUpon>AreaCalculator.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +228,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tasks\WK11.resx">
       <DependentUpon>WK11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks\WK12.resx">
+      <DependentUpon>WK12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks\WK13.resx">
+      <DependentUpon>WK13.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
