@@ -130,7 +130,9 @@
     <Compile Include="Assignments\A7\EditableDataGrid.Designer.cs">
       <DependentUpon>EditableDataGrid.cs</DependentUpon>
     </Compile>
-    <Compile Include="Assignments\A8\ProductForm.cs" />
+    <Compile Include="Assignments\A8\ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Assignments\A8\ProductForm.Designer.cs">
       <DependentUpon>ProductForm.cs</DependentUpon>
     </Compile>
@@ -165,6 +167,12 @@
     </Compile>
     <Compile Include="Tasks\WK13.Designer.cs">
       <DependentUpon>WK13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\WK16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasks\WK16.Designer.cs">
+      <DependentUpon>WK16.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Assignments\A10\FileSearch.resx">
       <DependentUpon>FileSearch.cs</DependentUpon>
@@ -234,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tasks\WK13.resx">
       <DependentUpon>WK13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks\WK16.resx">
+      <DependentUpon>WK16.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
