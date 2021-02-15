@@ -14,37 +14,6 @@ using System.Collections.Generic;
 
 namespace GUITasks.Assignments.A8
 {
-    class DBManager
-    {
-        const string connString = @"Initial Catalog=VP;Data Source=DESKTOP-G02T2H3\SQLEXPRESS;user=sa;password=1234";
-
-        public static int NonQuery(string query)
-        {
-            SqlConnection con = new SqlConnection(connString);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(query, con);
-            var rows = cmd.ExecuteNonQuery();
-            con.Close();
-            return rows;
-        }
-
-        public static List<string> Reader(string query)
-        {
-            SqlConnection con = new SqlConnection(connString);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(query, con);
-            var reader = cmd.ExecuteReader();
-            var records = new List<string>(2);
-            if (reader.Read())
-            {
-                records.Add(reader.GetString(1));
-                records.Add(reader.GetDouble(2).ToString());
-            }
-            con.Close();
-            return records;
-        }
-    }
-
     public partial class ProductForm : Form
     {
         public ProductForm()
@@ -92,7 +61,7 @@ namespace GUITasks.Assignments.A8
                 txt_id.ReadOnly = true;
                 btn_insert.Enabled = false;
             }
-            
+
         }
 
         void OnUpdate()
@@ -112,6 +81,37 @@ namespace GUITasks.Assignments.A8
             var query = "delete from product where id = " + txt_id.Text;
             DBManager.NonQuery(query);
             Reset();
+        }
+    }
+
+    class DBManager
+    {
+        const string connString = @"----";
+
+        public static int NonQuery(string query)
+        {
+            SqlConnection con = new SqlConnection(connString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(query, con);
+            var rows = cmd.ExecuteNonQuery();
+            con.Close();
+            return rows;
+        }
+
+        public static List<string> Reader(string query)
+        {
+            SqlConnection con = new SqlConnection(connString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(query, con);
+            var reader = cmd.ExecuteReader();
+            var records = new List<string>(2);
+            if (reader.Read())
+            {
+                records.Add(reader.GetString(1));
+                records.Add(reader.GetDouble(2).ToString());
+            }
+            con.Close();
+            return records;
         }
     }
 }
