@@ -28,13 +28,6 @@ namespace Final.Q2
             InitializeComponent();
             LoadData();
             cmbStudent.SelectedValueChanged += OnComboChange;
-            // cmbStudent.Items.Add("2018-ARID-0139");
-            // pict.Image = Image.FromFile(@"C:\Users\Osama\OneDrive\Desktop\Screenshot 2021-02-10 055424.png");
-            // lblReg.Text = "2018-ARID-0139";
-            // lblName.Text = "Osama Khan";
-            // lblDob.Text = "29/11/1997";
-            // lblProgram.Text = "BSCS";
-            // lblCgpa.Text = "" + 3.76;
         }
 
         void LoadData()
