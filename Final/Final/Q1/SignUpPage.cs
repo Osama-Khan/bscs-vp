@@ -45,6 +45,7 @@ namespace Final.Q1
             {
                 MessageBox.Show("Data could not be submitted!");
             }
+            conn.Close();
         }
     }
 }
